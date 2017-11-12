@@ -48,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\GameDbContext.cs" />
+    <Compile Include="DAL\IRepository.cs" />
+    <Compile Include="DAL\IUnitOfWork.cs" />
+    <Compile Include="DAL\UnitOfWork.cs" />
     <Compile Include="DTOs\CommentDto.cs" />
     <Compile Include="DTOs\GameDto.cs" />
     <Compile Include="DTOs\GenreDto.cs" />
@@ -60,9 +63,17 @@
     <Compile Include="Migrations\201711111606279_CreateGame.Designer.cs">
       <DependentUpon>201711111606279_CreateGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711111739129_GenereEdittedWithQunqueKeyToName.cs" />
+    <Compile Include="Migrations\201711111739129_GenereEdittedWithQunqueKeyToName.Designer.cs">
+      <DependentUpon>201711111739129_GenereEdittedWithQunqueKeyToName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711121239335_smallChangesInComment.cs" />
+    <Compile Include="Migrations\201711121239335_smallChangesInComment.Designer.cs">
+      <DependentUpon>201711121239335_smallChangesInComment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DAL\GameRepository.cs" />
+    <Compile Include="DAL\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -71,6 +82,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711111606279_CreateGame.resx">
       <DependentUpon>201711111606279_CreateGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711111739129_GenereEdittedWithQunqueKeyToName.resx">
+      <DependentUpon>201711111739129_GenereEdittedWithQunqueKeyToName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711121239335_smallChangesInComment.resx">
+      <DependentUpon>201711121239335_smallChangesInComment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

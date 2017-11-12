@@ -8,12 +8,11 @@ namespace WebGame.Data
     {
         public PlatformTypeDto()
         {
-            this.TblGames = new HashSet<GameDto>();
+            this.Games = new HashSet<GameDto>();
         }
 
-        public int Id { get; set; }
         public string Type { get; set; }
 
-        public virtual ICollection<GameDto> TblGames { get; set; }
+        public virtual ICollection<GameDto> Games { get; set; }
     }
 }

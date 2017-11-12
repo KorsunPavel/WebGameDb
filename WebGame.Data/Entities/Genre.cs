@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebGame.Data
 {
@@ -13,6 +15,9 @@ namespace WebGame.Data
         }
 
         public int Id { get; set; }
+
+        [MaxLength(50)]
+        [Index(IsUnique = true)]
         public string Name { get; set; }
         public Nullable<int> ParentGenreId { get; set; }
 

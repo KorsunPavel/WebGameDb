@@ -8,16 +8,13 @@ namespace WebGame.Data
     {
         public GenreDto()
         {
-            this.ChildGenres = new HashSet<GenreDto>();
-            this.TblGames = new HashSet<GameDto>();
+            this.ChildGenres = new HashSet<string>();
+            this.Games = new HashSet<GameDto>();
         }
 
-        public int Id { get; set; }
         public string Name { get; set; }
-        public Nullable<int> ParentGenreId { get; set; }
-
-        public virtual ICollection<GenreDto> ChildGenres { get; set; }
-        public virtual GenreDto ParentGenre { get; set; }
-        public virtual ICollection<GameDto> TblGames { get; set; }
+        public virtual ICollection<string> ChildGenres { get; set; }
+        public virtual string ParentGenre { get; set; }
+        public virtual ICollection<GameDto> Games { get; set; }
     }
 }

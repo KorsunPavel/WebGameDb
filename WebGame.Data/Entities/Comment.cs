@@ -14,7 +14,7 @@ namespace WebGame.Data
         public int Id { get; set; }
         public string Name { get; set; }
         public string Body { get; set; }
-        //public Nullable<int> GameId { get; set; }
+        public Nullable<int> GameId { get; set; }
         public Nullable<int> ParentCommentId { get; set; }
 
         public virtual ICollection<Comment> ChildComments { get; set; }

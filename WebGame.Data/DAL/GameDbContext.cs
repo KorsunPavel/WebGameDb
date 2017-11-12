@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WebGame.Data.DAL
 {
-    class GameDbContext : DbContext 
+    public class GameDbContext : DbContext 
     {
         public GameDbContext() : base("GameDbContext")
         {
