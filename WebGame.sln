@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebGame.Web", "WebGame\WebG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebGame.Data", "WebGame.Data\WebGame.Data.csproj", "{D2898980-1913-495D-95D9-808CF50F15AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebGame.Tests", "WebGame.Tests\WebGame.Tests.csproj", "{12BD3DC7-534A-4FED-A224-C255CEED1D96}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E78FC371-0D0F-42E8-9A3B-D3075A995427} = {E78FC371-0D0F-42E8-9A3B-D3075A995427}
+		{D2898980-1913-495D-95D9-808CF50F15AD} = {D2898980-1913-495D-95D9-808CF50F15AD}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,10 @@ Global
 		{D2898980-1913-495D-95D9-808CF50F15AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2898980-1913-495D-95D9-808CF50F15AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2898980-1913-495D-95D9-808CF50F15AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12BD3DC7-534A-4FED-A224-C255CEED1D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12BD3DC7-534A-4FED-A224-C255CEED1D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12BD3DC7-534A-4FED-A224-C255CEED1D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12BD3DC7-534A-4FED-A224-C255CEED1D96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

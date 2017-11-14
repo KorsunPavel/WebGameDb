@@ -146,6 +146,10 @@
     <Compile Include="Infostracture\NinjectDependencyResolver.cs" />
     <Compile Include="Infostracture\NinjectDependencyScope .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Implementations\CommentService.cs" />
+    <Compile Include="Services\Implementations\GameService.cs" />
+    <Compile Include="Services\Interfaces\ICommentService.cs" />
+    <Compile Include="Services\Interfaces\IGameService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

@@ -14,6 +14,8 @@ namespace WebGame.App_Start
     using WebUI.Infostracture;
     using WebGame.Data.DAL;
     using Ninject.Web.Common.WebHost;
+    using GameStore.Web.Services.Interfaces;
+    using GameStore.Web.Services.Implementations;
 
     public static class NinjectWebCommon 
     {
@@ -67,6 +69,7 @@ namespace WebGame.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
+            kernel.Bind<IGameService>().To<GameService>();
         }        
     }
 }
