@@ -17,9 +17,9 @@ namespace WebGame.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public GamesController()
+        public GamesController(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = new UnitOfWork();
+            _unitOfWork = unitOfWork;
         }
 
         // GET api/games
